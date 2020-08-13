@@ -1,0 +1,28 @@
+/* The animation code */
+@keyframes example {
+  0% {
+    left: 0px;
+    bottom: -80px;
+  }
+
+  100% {
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+.message.visible.wrong {
+  color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  /* animation-timing-function: ease; */
+}
+
+.message.visible.right {
+  color: green;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+}
